@@ -4,7 +4,7 @@ public class  SnakeLadder{
 	static final int Ladder = 1;
 	static final int Snake = 2;
 	static int Position = 0;
-
+	static int Diecount = 0;
 // main method
 	public static void main(String[] args) {
 
@@ -37,8 +37,13 @@ public class  SnakeLadder{
 				System.out.println("NoChance");
 			}
 
+                        System.out.println("Position of dice is " + Position);
+			Diecount++;
+
+
              }
                       System.out.println(" " + Position);
+                      System.out.println(" " + Diecount);
 
 	}
 }
