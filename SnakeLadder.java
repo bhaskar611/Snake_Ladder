@@ -9,10 +9,12 @@ public class  SnakeLadder{
 	public static void main(String[] args) {
 
 		System.out.println("Start Position is Zero");
-// Roll a die
+// while loop
+             while (Position < 100) {
+                 // Roll a die
                 int die = (int) (Math.random() * 6) + 1;
 		System.out.println("The Dice Number is " + die);
-// gets A ladder or Snake or NoChannce
+                 // gets A ladder or Snake or NoChannce
 		int option = (int) Math.floor(Math.random() * 10) % 3;
 
 
@@ -23,15 +25,18 @@ public class  SnakeLadder{
 			}
 			else if (option == Snake) {
 
+                                       if (Position > 0 && (Position - die) >= 0) {
 					Position = Position - die;
 					System.out.println("Snake Bites");
+                           }
 
 			}
 			else {
 				System.out.println("NoChance");
 			}
 
-
+             }
+                      System.out.println(" " + Position);
 
 	}
 }
