@@ -20,8 +20,10 @@ public class  SnakeLadder{
 
 
 			if (option == Ladder) {
+                                      if (Position <= 100 && (Position + die <= 100)){
 					Position = Position + die;
 				System.out.println(" Got a Ladder");
+                             }
 			}
 			else if (option == Snake) {
 
